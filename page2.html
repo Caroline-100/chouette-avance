@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="Default">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -18,7 +18,7 @@
 	<script src="./js/blocs.js"></script>
 	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>
-    <title>page2</title>
+    <title>contact</title>
 
     
 <!-- Analytics -->
@@ -40,18 +40,11 @@
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
-			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
+			<!-- <div class="collapse navbar-collapse navbar-1 special-dropdown-nav"> -->
+					<p class="site-navigation nav navbar-nav">
 						<a href="index.html">Accueil</a>
-					</li>
-					<li>
-					</li>
-					<li>
-						<a href="page2.html">page2 &gt;</a>
-					</li>
-				</ul>
-			</div>
+					</p>
+			<!-- </div> -->
 		</nav>
 	</div>
 </div>
@@ -81,37 +74,54 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-					<div class="form-group">
-						<label>
+					<label for="fname">
+					<p>
 							Nom
-						</label>
-						<input id="name" class="form-control" required />
+						</p>
+					</label>
+					<input id="fname"  type="text" name="textfield" placeholder="Gerard "class="form-control" required />
+						
+					<!-- <div class="form-group">
 					</div>
-					<div class="form-group">
-						<label>
-							Adresse email
+					<div class="form-group"> -->
+						<label for="fmail">
+							<p>
+								Adresse email
+							</p>
 						</label>
-						<input id="email" class="form-control" type="email" required />
-					</div>
-					<div class="form-group">
-						<label>
+						<input id="fmail" placeholder="gerard123@gmail.com " class="form-control" type="email" required />
+						<label for="finfos">
 							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
-					</div>
-					<div class="form-group">
-						<label>
+						</label >
+						<input  id = "finfos" list="ice-cream-flavors" id="ice-cream-choice" >
+						<datalist id="ice-cream-flavors">
+							<option value="voiture.com">
+							<option value="pizza.com">
+							<option value="matoiture.com">
+							<option value="immobilierseo.com">
+							<option value="Vanilla">
+						</datalist>
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
+						</label>
+						<textarea id="message" class="form-control" rows="4" cols="50" required></textarea> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
 				</form>
 			</div>
 			<div class="col-sm-6">
+				<address>
+					<a href="contact@lachouetteagence.com">
+						contact@lachouetteagence.com
+					</a>
+					<p>
+						2 place Sathonay 69001 Lyon
+					</p>
+				</address>
 				<p>
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+					Ouvert de 
+					<time datetime="PT9H">9h</time> à <time datetime="PT18H">18h,</time> du lundi au vendredi
 				</p>
 			</div>
 		</div>
@@ -135,22 +145,31 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="#"
+							>twitter<span class="fa fa-twitter icon-md"></span
+						  ></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="#"
+							>facebook<span class="fa fa-facebook icon-md"></span
+						  ></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="#">
+								dribbble<span class="fa fa-dribbble icon-md"></span>
+							</a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="#"
+                      >instagram<span class="fa fa-instagram icon-md"></span
+						>
+					</a>
 						</div>
 					</div>
 				</div>

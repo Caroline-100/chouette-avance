@@ -652,6 +652,7 @@ a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+    filter: contrast(1.75);
 }
 
 .container {
@@ -778,6 +779,9 @@ h4 {
     color: #F3976C!important;
     filter: contrast(1.6);
     font-weight: 600;
+    filter: contrast(1.75); 
+    width: 97%;
+    text-align: center;
 }
 
 .btn-atomic-tangerine {
